@@ -1,8 +1,7 @@
 streamlit
 google-api-python-client
-plotly
 pandas
 matplotlib
 wordcloud
-Pillow
-requests
+plotly
+requests>=2.32,<3.0
