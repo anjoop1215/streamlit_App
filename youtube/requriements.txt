@@ -1,8 +1,8 @@
-streamlit>=1.36.0
-google-api-python-client>=2.138.0
-pandas>=2.2.2
-plotly>=5.23.0
-matplotlib>=3.9.0
-wordcloud>=1.9.3
-Pillow>=10.4.0
-requests>=2.32.3
+streamlit
+google-api-python-client
+plotly
+pandas
+matplotlib
+wordcloud
+Pillow
+requests
