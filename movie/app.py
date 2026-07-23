@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os  
 
 # 페이지 설정
 st.set_page_config(page_title="Netflix Movie Analysis", layout="wide")
@@ -10,6 +11,10 @@ st.markdown("넷플릭스 데이터를 분석하여 평점 및 관객수 기반 
 # 1. 데이터 로드 (캐싱을 통해 성능 최적화)
 @st.cache_data
 def load_data():
+     # 현재 실행 중인 app.py의 위치를 기준으로 파일 경로를 완성합니다.
+    current_dir = os.path.dirname(__file__) 
+    file_path = os.path.join(current_dir, 'netflix_titles.csv')
+    
     # 데이터셋 경로 (본인의 파일명에 맞게 수정)
     # 데이터셋이 없는 경우를 대비해 예외 처리를 합니다.
     try:
