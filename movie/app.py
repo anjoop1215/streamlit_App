@@ -5,7 +5,7 @@ import os
 
 # 시각화 라이브러리 (이전 에러 방지를 위해 포함)
 import matplotlib.pyplot as plt
-import plotly.express as px
+
 from wordcloud import WordCloud
 
 # 페이지 설정
